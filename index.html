@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VGK4U</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+body {
+  font-family:'Poppins',sans-serif;
+  background:#0f0c29;
+  color:white;
+}
+
+/* NAV */
+.navbar {
+  background: rgba(15,10,50,0.7);
+  backdrop-filter: blur(12px);
+}
+
+/* HERO */
+.hero {
+  background:
+  linear-gradient(rgba(20,10,60,0.85), rgba(10,5,40,0.95)),
+  url('assets/pngtree-chart-with-red-down-arrow-on-abstract-background-falling-growth-in-image_15644622.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* SECTION */
+.section { padding:120px 24px; }
+
+/* BACKGROUNDS */
+.bg-how { background:linear-gradient(135deg,#1a1440,#2a1e6b); }
+.bg-op { background:linear-gradient(135deg,#120c35,#24175e); }
+.bg-test { background:linear-gradient(135deg,#1f1b4d,#2f2b70); }
+.bg-gallery { background:#0a0820; }
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius:16px;
+  padding:28px;
+  transition:0.4s;
+}
+.card:hover {
+  transform:translateY(-10px);
+}
+
+/* TRANSPARENT CARD */
+.glass-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+/* ICON BOX */
+.icon-box {
+  width:55px;height:55px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:14px;margin-bottom:15px;
+}
+.i1{background:linear-gradient(45deg,#22c55e,#4ade80);}
+.i2{background:linear-gradient(45deg,#3b82f6,#60a5fa);}
+.i3{background:linear-gradient(45deg,#f59e0b,#fbbf24);}
+.i4{background:linear-gradient(45deg,#ec4899,#f472b6);}
+.i5{background:linear-gradient(45deg,#6366f1,#818cf8);}
+
+/* BUTTON */
+.btn {
+  background:linear-gradient(to right,#f97316,#fb923c);
+}
+
+/* GALLERY */
+
+/* CONTACT */
+.contact-bg {
+  background:
+  linear-gradient(rgba(20,10,60,0.9), rgba(10,5,40,0.95)),
+  url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600');
+}
+
+/* INPUT */
+.input {
+  background: rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.2);
+  padding:14px;
+  border-radius:10px;
+}
+
+/* FOOTER */
+
+
+/* SOCIAL FIX */
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header class="header" id="header">
+
+  <!-- LEFT -->
+  <div class="nav-left">
+    <button class="hamburger" id="menuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <img src="Assets/logo1.png" class="logo">
+  </div>
+
+  <!-- CENTER -->
+  <nav class="nav-center">
+    <a href="#home">Home</a>
+    <a href="#how">How</a>
+    <a href="#opportunities">Opportunities</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- RIGHT -->
+  <div class="nav-right">
+    <a href="https://myntreal.com/vgk/login" class="login-btn">Login</a>
+  </div>
+
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#how">How</a>
+  <a href="#opportunities">Opportunities</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+
+
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+  <div class="hero-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-content">
+
+      <h1>
+        Build Your <span>Income</span><br>
+        with Multiple Opportunities
+      </h1>
+
+      <p class="subtext">
+        Start your journey with structured business opportunities in Solar, EV, Insurance & Real Estate.
+      </p>
+
+      <!-- POINTS -->
+      <ul class="features">
+        <li>✔ Multiple Income Streams</li>
+        <li>✔ Low Investment Entry</li>
+        <li>✔ Scalable Business Model</li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="cta">
+        <a href="#" class="btn primary">Get Started</a>
+        <a href="#gallery" class="btn secondary">View Details</a>
+      </div>
+
+      <!-- TRUST -->
+      <div class="trust">
+        <span>⭐ Trusted by 1000+ Users</span>
+        <span>🚀 Growing Network</span>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE (STATS / VISUAL) -->
+    <div class="hero-cards">
+
+      <div class="stat-card">
+        <h3>₹50K+</h3>
+        <p>Monthly Potential</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>5+</h3>
+        <p>Income Sources</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>24/7</h3>
+        <p>Flexible Work</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- HOW -->
+<section id="how" class="section bg-how text-center">
+<h2 class="text-4xl mb-12">How It Works</h2>
+<div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+<div class="card"><div class="icon-box i2"><i data-lucide="user-plus"></i></div>Register</div>
+<div class="card"><div class="icon-box i3"><i data-lucide="search"></i></div>Explore</div>
+<div class="card"><div class="icon-box i4"><i data-lucide="dollar-sign"></i></div>Earn</div>
+<div class="card"><div class="icon-box i5"><i data-lucide="trending-up"></i></div>Scale</div>
+</div>
+</section>
+
+<!-- OPPORTUNITIES -->
+<section id="opportunities" class="op-section">
+
+  <h2 class="title">Multiple Income Opportunities</h2>
+  <p class="subtitle">
+    Choose the right opportunity based on your interest and build scalable income streams.
+  </p>
+
+  <div class="op-grid">
+
+    <!-- SOLAR -->
+    <div class="op-card">
+      <span class="badge">TRENDING</span>
+
+      <div class="icon-box i1">☀️</div>
+
+      <h3>Solar Business</h3>
+
+      <p class="desc">
+        Sell rooftop solar systems with government subsidy support and strong demand.
+      </p>
+
+      <div class="meta">
+        <span>💰 Income: ₹20K – ₹1L+</span>
+        <span>📈 High Growth Sector</span>
+      </div>
+
+      <button class="btn">Start Now</button>
+    </div>
+
+    <!-- INSURANCE -->
+    <div class="op-card">
+      <span class="badge blue">RECURRING</span>
+
+      <div class="icon-box i2">🛡️</div>
+
+      <h3>Insurance</h3>
+
+      <p class="desc">
+        Offer insurance policies and earn recurring income with every renewal cycle.
+      </p>
+
+      <div class="meta">
+        <span>💰 Monthly Income</span>
+        <span>🔁 Passive Earnings</span>
+      </div>
+
+      <button class="btn">Start Now</button>
+    </div>
+
+    <!-- REAL ESTATE -->
+    <div class="op-card">
+      <span class="badge orange">HIGH VALUE</span>
+
+      <div class="icon-box i3">🏠</div>
+
+      <h3>Real Estate</h3>
+
+      <p class="desc">
+        Sell plots and properties and earn high commissions per transaction.
+      </p>
+
+      <div class="meta">
+        <span>💰 ₹50K – ₹5L per deal</span>
+        <span>🏆 Premium Market</span>
+      </div>
+
+      <button class="btn">Start Now</button>
+    </div>
+
+    <!-- EV -->
+    <div class="op-card">
+      <span class="badge">FUTURE</span>
+
+      <div class="icon-box i4">⚡</div>
+
+      <h3>EV Opportunities</h3>
+
+      <p class="desc">
+        Enter the electric vehicle ecosystem with EV sales and services.
+      </p>
+
+      <div class="meta">
+        <span>🚀 Fast Growing Industry</span>
+        <span>⚡ Future Ready</span>
+      </div>
+
+      <button class="btn">Start Now</button>
+    </div>
+
+    <!-- REFERRAL -->
+    <div class="op-card">
+      <span class="badge blue">SCALABLE</span>
+
+      <div class="icon-box i5">👥</div>
+
+      <h3>Referral Income</h3>
+
+      <p class="desc">
+        Build a network and generate income through structured referral systems.
+      </p>
+
+      <div class="meta">
+        <span>📊 Unlimited Potential</span>
+        <span>🌍 Work From Anywhere</span>
+      </div>
+
+      <button class="btn">Start Now</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- TESTIMONIAL -->
+<section class="testimonial-section">
+
+  <h2 class="title">What People Say</h2>
+
+  <div class="carousel">
+
+    <button class="nav prev" id="prevBtn">&#10094;</button>
+
+
+    <div class="carousel-viewport">
+      <div class="carousel-track" id="track">
+
+        <div class="card">
+          <img src="https://i.pravatar.cc/100?img=1">
+          <h4>Ravi Kumar</h4>
+          <p>Entrepreneur</p>
+          <span>Great platform to grow income.</span>
+        </div>
+
+        <div class="card">
+          <img src="https://i.pravatar.cc/100?img=2">
+          <h4>Sneha Reddy</h4>
+          <p>Employee</p>
+          <span>Simple and easy to start.</span>
+        </div>
+
+        <div class="card">
+          <img src="https://i.pravatar.cc/100?img=3">
+          <h4>Arjun</h4>
+          <p>Freelancer</p>
+          <span>Flexible earning model.</span>
+        </div>
+
+        <div class="card">
+          <img src="https://i.pravatar.cc/100?img=4">
+          <h4>Meena</h4>
+          <p>Student</p>
+          <span>Good opportunity for growth.</span>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="nav next" id="nextBtn">&#10095;</button>
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery-section">
+
+  <h2 class="title">Gallery</h2>
+
+  <div class="marquee">
+
+    <div class="marquee-track">
+
+      <!-- SET 1 -->
+      <div class="item"><img src="https://img.youtube.com/vi/gVS8TLW-J6o/0.jpg"></div>
+      <div class="item"><img src="https://img.youtube.com/vi/r2V6pvSlnqg/0.jpg"></div>
+      <div class="item"><img src="https://img.youtube.com/vi/gVS8TLW-J6o/0.jpg"></div>
+      <div class="item"><img src="https://img.youtube.com/vi/r2V6pvSlnqg/0.jpg"></div>
+
+      <!-- DUPLICATE SET (IMPORTANT) -->
+      <div class="item"><img src="https://img.youtube.com/vi/gVS8TLW-J6o/0.jpg"></div>
+      <div class="item"><img src="https://img.youtube.com/vi/r2V6pvSlnqg/0.jpg"></div>
+      <div class="item"><img src="https://img.youtube.com/vi/gVS8TLW-J6o/0.jpg"></div>
+      <div class="item"><img src="https://img.youtube.com/vi/r2V6pvSlnqg/0.jpg"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact-bg section">
+<h2 class="text-4xl text-center mb-12">Get in Touch</h2>
+
+<form class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+<input placeholder="Full Name" class="input">
+<input placeholder="Phone" class="input">
+<input placeholder="Email" class="input">
+<input placeholder="Subject" class="input">
+<textarea placeholder="Message" class="input md:col-span-2"></textarea>
+<button class="btn py-3 rounded md:col-span-2">Submit</button>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-col brand">
+      <img src="Assets/logo1.png" class="footer-logo">
+      <p>
+        VGK4U is a structured platform providing multiple income opportunities 
+        through services and referral-based growth.
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#opportunities">Opportunities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </div>
+
+    <!-- OPPORTUNITIES -->
+    <div class="footer-col">
+      <h3>Opportunities</h3>
+      <ul>
+        <li>Solar Business</li>
+        <li>Insurance</li>
+        <li>Real Estate</li>
+        <li>EV Solutions</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>📞 +91 90538 99899</p>
+      <p>🌐 vgk4u.com</p>
+
+      <!-- SOCIAL -->
+      <div class="social">
+
+        <a href="#">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2"/></svg>
+        </a>
+
+        <a href="#">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4M7.65 13.979H5.706V7.723H7.65zm-.984-7.024c-.614 0-1.011-.435-1.011-.973c0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973m8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355c-.537 0-.856.371-.997.728c-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01c1.279 0 2.238.857 2.238 2.699z"/></svg>
+        </a>
+
+        <a href="#">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M11.603 9.833L9.357 8.785C9.161 8.694 9 8.796 9 9.013v1.974c0 .217.161.319.357.228l2.245-1.048c.197-.092.197-.242.001-.334M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m0 13.5c-4.914 0-5-.443-5-3.9s.086-3.9 5-3.9s5 .443 5 3.9s-.086 3.9-5 3.9"/></svg>
+        </a>
+
+        <a href="#">
+          <svg viewBox="0 0 24 24"><path d="M4 4H20V20H4Z"/></svg>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 VGK4U. All rights reserved.</p>
+    <span>Income results may vary based on effort.</span>
+  </div>
+
+</footer>
+
+<script>
+
+const header = document.getElementById("header");
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+/* SCROLL EFFECT */
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+/* MENU TOGGLE */
+menuBtn.onclick = () => {
+  menuBtn.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+};
+
+
+
+// testimonials
+const track = document.getElementById("track");
+const next = document.getElementById("nextBtn");
+const prev = document.getElementById("prevBtn");
+
+let index = 0;
+
+function getCardsPerView() {
+  return window.innerWidth <= 768 ? 1 : 2;
+}
+
+function updateSlide() {
+  const cardsPerView = getCardsPerView();
+  const gap = 20;
+  const cardWidth = track.children[0].offsetWidth + gap;
+
+  track.style.transform = `translateX(-${index * cardWidth}px)`;
+}
+
+next.onclick = () => {
+  const total = track.children.length;
+  const perView = getCardsPerView();
+
+  if (index < total - perView) index++;
+  updateSlide();
+};
+
+prev.onclick = () => {
+  if (index > 0) index--;
+  updateSlide();
+};
+
+/* AUTO */
+setInterval(() => {
+  const total = track.children.length;
+  const perView = getCardsPerView();
+
+  if (index < total - perView) index++;
+  else index = 0;
+
+  updateSlide();
+}, 4000);
+
+window.addEventListener("resize", updateSlide);
+updateSlide();
+
+
+
+window.onload = () => {
+  lucide.createIcons();
+};
+</script>
+
+</body>
+</html>
